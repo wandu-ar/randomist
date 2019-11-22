@@ -1,0 +1,22 @@
+{
+    "name": "wandu-ar/randomist",
+    "description": "Librería para generar cadenas aleatorias.",
+    "type": "package",
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "license": "mit",
+    "authors": [
+        {
+            "name": "Alejandro D. Guevara",
+            "email": "alejandro@wandu.com.ar",
+            "homepage": "https://wandu.com.ar"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Wandu\\Randomist\\": "src/"
+        }
+    }
+}
