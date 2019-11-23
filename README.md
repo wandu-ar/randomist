@@ -4,7 +4,7 @@ Librería en php para generar cadenas de texto aleatorias basadas en un listado 
 
 Como resultado de utilizar la librería podés obtener las siguientes cadenas aleatorias.
 
-`
+```
 1- Secure password: H*4qjcf4p8HB 
 
 2- Multiple simple passwords:
@@ -26,7 +26,7 @@ l2Om884W
 5- Random string for simple captcha: PG8LK
 
 6- Verification code: 539108
-`
+```
 
 ## Requerimientos
 
