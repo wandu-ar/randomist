@@ -1,8 +1,15 @@
 # Randomist
 
-Librería en php para generar cadenas de texto aleatorias basadas en un listado de caracteres predefinidos: numéricos, minúsculas, mayúsculas y caracteres alfanuméricos. También hay una opción para utilizar solo caracteres seguros para URI y que son facilmente distinguibles y reconocibles de entre otros caracteres para los usuarios (pensado para los más pequeños y personas con dificultades para la informática en general).
+PHP library for generate random string based on groups chars.
 
-Como resultado de utilizar la librería podés obtener las siguientes cadenas aleatorias.
+You can:
+1. Combine the rando string with numbers, lowercase and uppercase alpha chars and special chars.
+2. Set the minimimus and maximus of every group of chars.
+3. Create single or batch strings.
+4. Use only URI safe specials chars.
+5. Use a safe chars: is an special group of chars that can be easily recognized by childs or persons with poor computer capabilities. Are chars that don't confused with other similars chars depending the used font family. 
+
+Result example:
 
 ```
 1- Secure password: H*4qjcf4p8HB 
@@ -28,25 +35,28 @@ l2Om884W
 6- Verification code: 539108
 ```
 
-## Requerimientos
+## Requerimients
 
 - PHP >= 5.6
 
-## Instalación
+## How to install
 
 ```sh
 composer require wandu-ar/randomist
 ```
 
-## Uso
+## Usage
 
-1. Añadir el siguiente código al comienzo de tu script.
+1. Add the following code at the beginning of your script.
 
 ```php
 use Wandu\Utils\Randomist;
 ```
 
-## Ejemplos
+## Examples
 
-Para ver ejemplos y casos de uso, visitá el siguiente script [Ejemplos](../master/examples/index.php)
+To see examples, visit the following script: [Examples](../master/examples/index.php)
 
+## Roadmap 
+
+For the next version, predefined character groups can be modified because we will add an abstraction layer over them.
