@@ -5,7 +5,7 @@
 Randomist is a PHP library for generate random string based on groups chars.
 
 You can:
-1. Combine the rando string with numbers, lowercase and uppercase alpha chars and special chars.
+1. Combine the random string with numbers, lowercase and uppercase alpha chars and special chars.
 2. Set the minimimus and maximus of every group of chars.
 3. Create single or batch strings.
 4. Use only URI safe specials chars.
