@@ -143,7 +143,7 @@ Show: `6- Verification code: 539108`
 
 ## More examples
 
-To see the complete example script, visit the following script: [Examples](examples/index.php)
+For a complete example script, visit the following script: [Examples](examples/index.php)
 
 ## Roadmap 
 
@@ -157,5 +157,4 @@ Copyright (c) 2019 Wandu ® Argentina de Alejandro D. Guevara
 
 ## Donate
 
-If you want, you can give me a cup of coffee :D
-Make a [Donation](https://www.paypal.me/AleGueva)
+If you want, you can give me a cup of coffee :D | Make a [Donation](https://www.paypal.me/AleGueva)
