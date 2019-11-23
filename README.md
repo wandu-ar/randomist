@@ -7,32 +7,17 @@ You can:
 2. Set the minimimus and maximus of every group of chars.
 3. Create single or batch strings.
 4. Use only URI safe specials chars.
-5. Use a safe chars: is an special group of chars that can be easily recognized by childs or persons with poor computer capabilities. Are chars that don't confused with other similars chars depending the used font family. 
+5. Use a safe chars: is an special group of chars that can be easily recognized by childs or persons with poor computer capabilities. Are chars that don't confused with other similars chars depending the used font family.
+6. Create a random lenght for random strings.
 
-Result example:
-
+For example:
 ```
-1- Secure password: H*4qjcf4p8HB 
-
-2- Multiple simple passwords:
+H*4qjcf4p8HB 
 EP26r49e
-y76Tv30B
-91s9NBd4
-3vKi04Y0
-kU270Pk0
-l2Om884W
-99iD73Ab
-2M3d4o1S
-4Bx9iI21
-97Fx8Ko7
-
-3- Random hash: BKxTocZs9zcCcbitKFS2bCI6mwyBx1bTeMl1VOnBuS95Z03Xc4ZgRmssRqJC6Ittofo
-
-4- Random hash URI safe: 1Fg@4B)*QRt@2e;B;ANArD(8Me@MQ
-
-5- Random string for simple captcha: PG8LK
-
-6- Verification code: 539108
+BKxTocZs9zcCcbitKFS2bCI6mwyBx1bTeMl1VOnBuS95Z03Xc4ZgRmssRqJC6Ittofo
+1Fg@4B)*QRt@2e;B;ANArD(8Me@MQ
+PG8LK
+539108
 ```
 
 ## Requerimients
@@ -51,9 +36,113 @@ composer require wandu-ar/randomist
 
 ```php
 use Wandu\Utils\Randomist;
+
+$randomist = new Randomist();
+
 ```
 
-## Examples
+2. Set preferences examples:
+
+```php
+// Example 1: Secure password.
+
+$secure_password =  $randomist
+                        ->set_lenght(12)
+                        ->include_number(3)
+                        ->include_lowercase(3)
+                        ->include_uppercase(3)
+                        ->include_special(1, 1)
+                        ->generate();
+
+echo "1- Secure password: {$secure_password} \n\n";
+```
+Show: `1- Secure password: H*4qjcf4p8HB`
+
+```php
+// Example 2: Multiple simple passwords.
+$multiple_passwords =  $randomist
+                        ->reset()
+                        ->set_lenght(8)
+                        ->include_number(4)
+                        ->include_lowercase(2)
+                        ->include_uppercase(2)
+                        ->generate(10);
+
+echo "2- Multiple simple passwords:\n".implode("\n", $multiple_passwords)."\n\n";
+```
+Show: 
+```
+2- Multiple simple passwords:
+EP26r49e
+y76Tv30B
+91s9NBd4
+3vKi04Y0
+kU270Pk0
+l2Om884W
+99iD73Ab
+2M3d4o1S
+4Bx9iI21
+97Fx8Ko7
+```
+
+```php
+// Example 3: Random hash.
+$random_hash =  $randomist
+                    ->reset()
+                    ->set_lenght(50, 80)
+                    ->include_number(1)
+                    ->include_lowercase(1)
+                    ->include_uppercase(1)
+                    ->generate();
+
+echo "3- Random hash: {$random_hash}\n\n";  
+```
+Show: `3- Random hash: BKxTocZs9zcCcbitKFS2bCI6mwyBx1bTeMl1VOnBuS95Z03Xc4ZgRmssRqJC6Ittofo`
+
+```php
+// Example 4: Random hash URI safe.
+$random_hash_uri_safe =  $randomist
+                            ->reset()
+                            ->set_lenght(30, 40)
+                            ->only_safe()
+                            ->include_number(1)
+                            ->include_lowercase(1)
+                            ->include_uppercase(1)
+                            ->include_special(1)
+                            ->generate();
+
+echo "4- Random hash URI safe: {$random_hash_uri_safe}\n\n";
+```
+Show: `4- Random hash URI safe: .*~1;Fg@4B)*QRt@2e;B;ANArD(8Me@MQ`
+
+```php
+// Example 5: Random string for simple captcha.
+$captcha = $randomist
+                ->reset()
+                ->set_lenght(5)
+                ->include_number(1)
+                ->include_uppercase(1)
+                ->generate();
+
+echo "5- Random string for simple captcha: {$captcha}\n\n";
+```
+Show: `5- Random string for simple captcha: PG8LK`
+
+```php
+// Example 6: Verification code.
+$code = $randomist
+            ->reset()
+            ->set_lenght(6)
+            ->include_number(1)
+            ->generate();
+
+echo "6- Verification code: {$code}\n\n";
+```
+Show: `6- Verification code: 539108`            
+
+```
+
+## More examples
 
 To see examples, visit the following script: [Examples](../master/examples/index.php)
 

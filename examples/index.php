@@ -44,7 +44,7 @@ $random_hash =  $randomist
 
 echo "3- Random hash: {$random_hash}\n\n";                    
 
-// Example 4: Random hash URI safe. (For cookie)
+// Example 4: Random hash URI safe.
 $random_hash_uri_safe =  $randomist
                             ->reset()
                             ->set_lenght(30, 40)
