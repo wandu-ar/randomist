@@ -30,7 +30,7 @@ l2Om884W
 
 ## Requerimientos
 
-- >= PHP 5.6
+- PHP >= 5.6
 
 ## Instalación
 
