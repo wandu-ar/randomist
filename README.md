@@ -157,4 +157,5 @@ Copyright (c) 2019 Wandu ® Argentina de Alejandro D. Guevara
 
 ## Donate
 
-If you want, make a [Donation](https://www.paypal.me/AleGueva)
+If you want, you can give me a cup of coffee :D
+Make a [Donation](https://www.paypal.me/AleGueva)
