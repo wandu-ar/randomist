@@ -48,5 +48,5 @@ use Wandu\Utils\Randomist;
 
 ## Ejemplos
 
-Para ver ejemplos y casos de uso, visitá el siguiente script [Ejemplos](../examples/index.php)
+Para ver ejemplos y casos de uso, visitá el siguiente script [Ejemplos](../master/examples/index.php)
 
