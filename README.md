@@ -41,11 +41,10 @@ $randomist = new Randomist();
 
 ```
 
-2. Set preferences examples:
+2. Set preferences:
 
+- Example 1: Secure password.
 ```php
-// Example 1: Secure password.
-
 $secure_password =  $randomist
                         ->set_lenght(12)
                         ->include_number(3)
@@ -58,8 +57,8 @@ echo "1- Secure password: {$secure_password} \n\n";
 ```
 Show: `1- Secure password: H*4qjcf4p8HB`
 
+- Example 2: Multiple simple passwords.
 ```php
-// Example 2: Multiple simple passwords.
 $multiple_passwords =  $randomist
                         ->reset()
                         ->set_lenght(8)
@@ -85,8 +84,8 @@ l2Om884W
 97Fx8Ko7
 ```
 
+- Example 3: Random string as hash, for a key.
 ```php
-// Example 3: Random hash.
 $random_hash =  $randomist
                     ->reset()
                     ->set_lenght(50, 80)
@@ -99,8 +98,8 @@ echo "3- Random hash: {$random_hash}\n\n";
 ```
 Show: `3- Random hash: BKxTocZs9zcCcbitKFS2bCI6mwyBx1bTeMl1VOnBuS95Z03Xc4ZgRmssRqJC6Ittofo`
 
+- Example 4: Random hash URI safe.
 ```php
-// Example 4: Random hash URI safe.
 $random_hash_uri_safe =  $randomist
                             ->reset()
                             ->set_lenght(30, 40)
@@ -115,8 +114,8 @@ echo "4- Random hash URI safe: {$random_hash_uri_safe}\n\n";
 ```
 Show: `4- Random hash URI safe: .*~1;Fg@4B)*QRt@2e;B;ANArD(8Me@MQ`
 
+- Example 5: Random string for simple captcha.
 ```php
-// Example 5: Random string for simple captcha.
 $captcha = $randomist
                 ->reset()
                 ->set_lenght(5)
@@ -128,8 +127,8 @@ echo "5- Random string for simple captcha: {$captcha}\n\n";
 ```
 Show: `5- Random string for simple captcha: PG8LK`
 
+- Example 6: Verification code.
 ```php
-// Example 6: Verification code.
 $code = $randomist
             ->reset()
             ->set_lenght(6)
@@ -139,8 +138,6 @@ $code = $randomist
 echo "6- Verification code: {$code}\n\n";
 ```
 Show: `6- Verification code: 539108`            
-
-```
 
 ## More examples
 
