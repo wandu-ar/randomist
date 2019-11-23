@@ -1,6 +1,8 @@
 # Randomist
 
-PHP library for generate random string based on groups chars.
+![Version 2.2](https://img.shields.io/badge/version-1.0.0-blue.svg) ![MIT license](https://img.shields.io/badge/license-MIT-green.svg) [![Donate](https://img.shields.io/badge/give-donation-yellow.svg)](https://www.paypal.me/AleGueva)
+
+Randomist is a PHP library for generate random string based on groups chars.
 
 You can:
 1. Combine the rando string with numbers, lowercase and uppercase alpha chars and special chars.
@@ -141,8 +143,18 @@ Show: `6- Verification code: 539108`
 
 ## More examples
 
-To see examples, visit the following script: [Examples](../master/examples/index.php)
+To see the complete example script, visit the following script: [Examples](examples/index.php)
 
 ## Roadmap 
 
 For the next version, predefined character groups can be modified because we will add an abstraction layer over them.
+
+## License
+
+[MIT](LICENSE)
+
+Copyright (c) 2019 Wandu ® Argentina de Alejandro D. Guevara
+
+## Donate
+
+If you want, make a [Donation](https://www.paypal.me/AleGueva)
